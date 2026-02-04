@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MassCalculate
 {
-    static internal class SingleArray
+    static public class SingleArray
     {
-        static internal int SumArray(int[] array)
+        static public int SumArray(int[] array)
         {
             if (array == null) { return 0; }
             else
@@ -16,13 +16,12 @@ namespace MassCalculate
                 int sum = 0;
                 foreach (int i in array)
                 {
-                    sum += array[i];
-                    
+                    sum += i;                    
                 }
                 return sum;
             }
         }
-        static internal double SumArray(double[] array)
+        static public double SumArray(double[] array)
         {
             if (array == null) { return 0; }
             else
@@ -30,8 +29,7 @@ namespace MassCalculate
                 double sum = 0;
                 foreach (double i in array)
                 {
-                    sum += array[i];
-
+                    sum += i;
                 }
                 return sum;
             }
