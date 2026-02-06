@@ -66,7 +66,7 @@ namespace MassCalculate
         }
         static public double[] SumArray(double[] arrayX, double value)
         {
-            if (arrayX == null || value == null) { return null; }
+            if (arrayX == null) { return null; }
             else
             {
                 for (int i = 0; i < arrayX.Length; i++)
@@ -107,7 +107,7 @@ namespace MassCalculate
         }
         static public double[] MultipkicationArray(double[] arrayX, double value)
         {
-            if (arrayX == null || value == null) { return null; }
+            if (arrayX == null) { return null; }
             else
             {
                 for (int i = 0; i < arrayX.Length; i++)
@@ -148,7 +148,7 @@ namespace MassCalculate
         }
         static public double[] SubstractionArray(double[] arrayX, double value)
         {
-            if (arrayX == null || value == null) { return null; }
+            if (arrayX == null) { return null; }
             else
             {
                 for (int i = 0; i < arrayX.Length; i++)
