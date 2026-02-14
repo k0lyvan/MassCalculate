@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace MassCalculate
 {
-    static internal class TwoArrays
+    static public class TwoArrays
     {
         public static int[,] SumArrays(int [,] arrayX, int[,] arrayY)
         {
             if (arrayX == null || arrayY == null) { return null; }
             else if (arrayX.Length != arrayY.Length) { return null; }
-            else if (arrayX.Length != arrayY.Length || arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0))
+            else if (arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0) || arrayX.GetUpperBound(1) != arrayY.GetUpperBound(1))
             { return null; }
             else
             {
@@ -30,7 +30,7 @@ namespace MassCalculate
         {
             if (arrayX == null || arrayY == null) { return null; }
             else if (arrayX.Length != arrayY.Length) { return null; }
-            else if (arrayX.Length != arrayY.Length || arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0))
+            else if (arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0) || arrayX.GetUpperBound(1) != arrayY.GetUpperBound(1))
             { return null; }
             else
             {
@@ -48,7 +48,7 @@ namespace MassCalculate
         {
             if (arrayX == null || arrayY == null) { return null; }
             else if (arrayX.Length != arrayY.Length) { return null; }
-            else if (arrayX.Length != arrayY.Length || arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0))
+            else if (arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0) || arrayX.GetUpperBound(1) != arrayY.GetUpperBound(1))
             { return null; }
             else
             {
@@ -65,7 +65,7 @@ namespace MassCalculate
         {
             if (arrayX == null || arrayY == null) { return null; }
             else if (arrayX.Length != arrayY.Length) { return null; }
-            else if (arrayX.Length != arrayY.Length || arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0))
+            else if (arrayX.GetUpperBound(0) != arrayY.GetUpperBound(0) || arrayX.GetUpperBound(1) != arrayY.GetUpperBound(1))
             { return null; }
             else
             {
@@ -94,7 +94,7 @@ namespace MassCalculate
                     for (int j = 0; j < rang; j++)
                     {
                         int c = 0;
-                        for (int k = 0; k < rang; k++)
+                        for (int k = 0; k <= rang; k++)
                             c += arrayX[i, k] * arrayY[k, j];
                         resArray[i, j] = c;
                     }
